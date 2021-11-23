@@ -16,6 +16,9 @@
 git下载源码后部分开发人员无法编译的问题（挺诡异的问题）,可以按照以下两种方式尝试解决:<br/>
 1）改成.net 4.5 framework 再试试。<br/>
 2）直接下载BSF源码进行编译<br/>
+3) 给所有项目安装2.0版本的system.Net.Http包（右键解决方案→Nuget可以给所有项目安装这个包）。
+   原因：BSF引用的是system.Net.Http 2.0，但win8以后windows默认的NETFramework是4.5，包含的是system.Net.Http 4.0版本
+
 
 
 ## .net 简单任务调度平台 ##
